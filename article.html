@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Расписание недели</title>
+<style> 
+ body {
+    background-color:#f1b59d
+       background-size: cover; 
+       background-repeat: no-repeat; 
+       background-position: center; 
+   }
+       .header {
+        border: 1px solid #ccc;
+        text-align: center; 
+    max-width: 800px;  
+    margin: 0 auto;   
+    font-size: 24px;   
+    line-height: 1.5;   
+  }
+    .schedule { 
+        display: flex; 
+        flex-wrap: wrap; 
+    } 
+    .day {
+        border: 1px solid #ccc;
+    border-radius: 10px; 
+    overflow: hidden;
+    background-color:rgba(221, 250, 248, 0.993);
+    flex: 1 0 14%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;  
+    } 
+    .day-header { 
+        font-weight: bold; 
+        text-align: center; 
+        margin-bottom: 5px; 
+    } 
+    .time-slot { 
+        background-color:#fce4ec;
+        color:pink
+        font-size: 0.9em; 
+        margin-bottom: 3px; 
+    } 
+    .event { 
+        border-collapse: collapse;
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 100%;
+    margin-bottom: 20px;
+        background-color: #fcd8fa; 
+        padding: 5px; 
+        margin-bottom: 3px; 
+    } 
+    .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  .centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .round-image {
+      border-radius: 50%;
+      border: 2px solid black;
+      padding: 5px;
+  }
+</style> 
+</head>
+<body>
+    <h1 class="header">Расписание на неделю</h1> <img src="эмблема.jpg" width="300" height="200" alt="Иконка">
+<div class="schedule">
+    <div class="day">
+        <div class="day-header">Понедельник</div>
+        <div class="time-slot">4 пара 13:50-15:20</div>
+        <div class="event">Лекция, Бизнес-процессы и основы организационного управления (к.э.н., доцент кафедры Пасешник Н.П.), 216/1</div>
+        <div class="time-slot">5 пара 15:30-17:00</div>
+        <div class="event">Лекция, Бизнес-процессы и основы организационного управления (к.э.н., доцент кафедры Пасешник Н.П.), 216/1</div>
+    </div>
+    <div class="day">
+        <div class="day-header">Вторник</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+        <div class="time-slot">2 пара 10:10-11:40</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+        <div class="time-slot">3 пара 12:00-13:30</div>
+        <div class="event">Лекция, Архитектура информационных систем (Блинов А.В.), 216/1</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Алгоритмизация и технологии программирования (Блинов А.В.), 216/1</div>
+    </div>
+    <div class="day">
+        <div class="day-header">Среда</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Алгоритмизация и технологии программирования (Блинов А.В.), 216/1</div>
+        <div class="time-slot">2 пара 10:10-11:40</div>
+        <div class="event">Лекция, Корпоративные информационные системы (Старший преподаватель Коробкова О.В.), 218/1</div>
+        <div class="time-slot">3 пара 12:00-13:30</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+        <div class="time-slot">4 пара 13:50-15:20</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+    </div>
+    <div class="day">
+        <div class="day-header">Четверг</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Корпоративные информационные системы (Старший преподаватель Коробкова О.В.), 218/1</div>
+        <div class="time-slot">2 пара 10:10-11:40</div>
+        <div class="event">Лекция, Алгоритмизация и технологии программирования (Блинов А.В.), 216/1</div>
+        <div class="time-slot">3 пара 12:00-13:30</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+        <div class="time-slot">4 пара 13:50-15:20</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+    </div>
+    <div class="day">
+        <div class="day-header">Пятница</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Корпоративные информационные системы (Старший преподаватель Коробкова О.В.), 218/1</div>
+        <div class="time-slot">2 пара 10:10-11:40</div>
+        <div class="event">Лекция, Алгоритмизация и технологии программирования (Блинов А.В.), 216/1</div>
+        <div class="time-slot">3 пара 12:00-13:30</div>
+        <div class="event">Лекция, Дискретная математика и математическая логика (к.физ.-матем.н; доцент кафедры Завьялов О. Г.), 317/1</div>
+    </div>
+    <div class="day">
+        <div class="day-header">Суббота</div>
+        <div class="time-slot">1 пара 8:30-10:00</div>
+        <div class="event">Лекция, Физика (к.т.н., доцент кафедры Епишков Е. Н.), 108/2</div>
+        <div class="time-slot">2 пара 10:10-11:40</div>
+        <div class="event">Лекция, Физика (к.т.н., доцент кафедры Епишков Е. Н.), 108/2</div>
+    </div>
+</div>
+<div class="flex-container">
+<img src="2.jpg" width="500" height="300"   alt="пятерка" class="round-image">
+<img src="3.jpg"  width="500" height="300" alt="доброе утро " class="centered-img">
+<img src="4.jpg"  width="500" height="300"  alt="пятерка2"class="round-image">
+</div>
+</body>
+</html>
